@@ -562,7 +562,7 @@ export default function Index() {
               asChild
               className="bg-white text-primary hover:bg-secondary text-lg px-8 py-3"
             >
-              <a href="https://arzhost.com/vps/">Choose a Plan</a>
+              <a href="https://arzhost.com/domain/">Choose a Plan</a>
             </Button>
             <Button
               variant="outline"
@@ -575,14 +575,14 @@ export default function Index() {
             <p className="text-lg">
               Looking for{" "}
               <a
-                href="https://arzhost.com/"
+                href="https://arzhost.com/domain/"
                 className="underline hover:text-secondary"
               >
                 VPS hosting Hong Kong
               </a>
               ? Visit our main site at{" "}
               <a
-                href="https://arzhost.com/"
+                href="https://arzhost.com/domain/"
                 className="underline hover:text-secondary"
               >
                 ARZ Host
