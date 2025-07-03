@@ -419,7 +419,7 @@ export default function Index() {
                 backups, and bilingual support.
               </p>
               <Button asChild className="w-full">
-                <a href="https://arzhost.com/vps/">Choose Basic Plan</a>
+                <a href="https://arzhost.com/domain/">Choose Basic Plan</a>
               </Button>
             </div>
             <div className="border-2 border-primary rounded-lg p-8 text-center relative">
@@ -435,7 +435,7 @@ export default function Index() {
                 technical support.
               </p>
               <Button asChild className="w-full">
-                <a href="https://arzhost.com/vps/">Choose Business Plan</a>
+                <a href="https://arzhost.com/domain/">Choose Business Plan</a>
               </Button>
             </div>
             <div className="border border-secondary rounded-lg p-8 text-center">
@@ -448,7 +448,7 @@ export default function Index() {
                 account manager.
               </p>
               <Button asChild className="w-full">
-                <a href="https://arzhost.com/vps/">Choose Enterprise Plan</a>
+                <a href="https://arzhost.com/domain/">Choose Enterprise Plan</a>
               </Button>
             </div>
           </div>
