@@ -94,7 +94,7 @@ export default function Index() {
               asChild
               className="bg-white text-primary hover:bg-secondary text-lg px-8 py-3"
             >
-              <a href="https://arzhost.com/vps/">Choose a Plan</a>
+              <a href="https://arzhost.com/domain/">Choose a Plan</a>
             </Button>
             <Button
               variant="outline"
