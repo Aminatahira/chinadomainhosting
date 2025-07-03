@@ -3,12 +3,919 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world project</title>
+    <title>Chinese Domain Hosting - ARZ Host | Fast, Legal, Compliant</title>
+    <meta
+      name="description"
+      content="Professional Chinese domain hosting with ICP support, fast local loading, and full compliance. Perfect for .cn domains targeting the Chinese market."
+    />
+    <meta
+      name="keywords"
+      content="chinese domain hosting, .cn hosting, china vps, icp license, domain registration china"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.6;
+        color: #2c3e50;
+        background-color: #ffffff;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header Styles */
+      .header {
+        background: #ffffff;
+        border-bottom: 1px solid #ecf0f1;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2c3e50;
+        text-decoration: none;
+      }
+
+      .nav {
+        display: flex;
+        gap: 30px;
+      }
+
+      .nav a {
+        color: #2c3e50;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: #3498db;
+      }
+
+      .mobile-menu {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #2c3e50;
+        cursor: pointer;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+        color: white;
+        padding: 120px 0 80px;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .hero .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .hero .description {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .features-badges {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+
+      .badge {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 8px 16px;
+        border-radius: 25px;
+        font-size: 0.9rem;
+      }
+
+      .cta-buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s;
+        border: 2px solid transparent;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .btn-primary {
+        background: white;
+        color: #3498db;
+      }
+
+      .btn-primary:hover {
+        background: #ecf0f1;
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: white;
+        border-color: white;
+      }
+
+      .btn-outline:hover {
+        background: white;
+        color: #3498db;
+      }
+
+      /* Section Styles */
+      .section {
+        padding: 80px 0;
+      }
+
+      .section-alt {
+        background: #ecf0f1;
+      }
+
+      .section h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2c3e50;
+      }
+
+      .section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      /* Features Grid */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+        margin-top: 50px;
+      }
+
+      .feature-card {
+        text-align: center;
+      }
+
+      .feature-icon {
+        width: 64px;
+        height: 64px;
+        background: #3498db;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        color: white;
+        font-size: 24px;
+      }
+
+      .feature-card h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #2c3e50;
+      }
+
+      .feature-card p {
+        text-align: left;
+        margin: 0;
+      }
+
+      /* Video Section */
+      .video-section {
+        padding: 80px 0;
+        background: #ecf0f1;
+      }
+
+      .video-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Hosting Features */
+      .hosting-features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .hosting-card {
+        border: 1px solid #ecf0f1;
+        border-radius: 10px;
+        padding: 30px;
+      }
+
+      .hosting-card h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #2c3e50;
+      }
+
+      /* Target Audience */
+      .audience-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        margin-top: 50px;
+      }
+
+      .audience-item {
+        text-align: center;
+      }
+
+      .audience-item h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #2c3e50;
+      }
+
+      /* Pricing Plans */
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .pricing-card {
+        border: 1px solid #ecf0f1;
+        border-radius: 10px;
+        padding: 40px;
+        text-align: center;
+        position: relative;
+      }
+
+      .pricing-card.featured {
+        border: 2px solid #3498db;
+      }
+
+      .popular-badge {
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #3498db;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 15px;
+        font-size: 0.9rem;
+      }
+
+      .pricing-card h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #2c3e50;
+      }
+
+      .pricing-card p {
+        margin-bottom: 30px;
+        text-align: left;
+      }
+
+      .pricing-card .btn {
+        width: 100%;
+        background: #3498db;
+        color: white;
+      }
+
+      .pricing-card .btn:hover {
+        background: #2980b9;
+      }
+
+      .included-features {
+        background: #ecf0f1;
+        border-radius: 10px;
+        padding: 40px;
+        margin-top: 50px;
+      }
+
+      .included-features h3 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+      }
+
+      .features-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .checkmark {
+        color: #2ecc71;
+        font-weight: bold;
+      }
+
+      /* CTA Section */
+      .cta-section {
+        background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .cta-section h2 {
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+      }
+
+      .cta-footer {
+        margin-top: 30px;
+        font-size: 1.1rem;
+      }
+
+      .cta-footer a {
+        color: white;
+        text-decoration: underline;
+      }
+
+      .cta-footer a:hover {
+        color: #ecf0f1;
+      }
+
+      /* Footer */
+      .footer {
+        background: #2c3e50;
+        color: white;
+        padding: 60px 0 30px;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+      }
+
+      .footer-section h3,
+      .footer-section h4 {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+      }
+
+      .footer-section p {
+        color: #bdc3c7;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-section ul li a {
+        color: #bdc3c7;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-section ul li a:hover {
+        color: white;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #34495e;
+        margin-top: 40px;
+        padding-top: 30px;
+        text-align: center;
+        color: #bdc3c7;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .nav {
+          display: none;
+        }
+
+        .mobile-menu {
+          display: block;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero .subtitle {
+          font-size: 1.2rem;
+        }
+
+        .section h2 {
+          font-size: 2rem;
+        }
+
+        .features-badges {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .cta-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .btn {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    </style>
   </head>
-
   <body>
-    <div id="root"></div>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="logo">ARZ Host</a>
+          <nav class="nav">
+            <a
+              href="https://arzhost.com/hosting/china-based-vps-server-hosting/"
+              >Chinese Domain Hosting</a
+            >
+            <a href="https://arzhost.com/region-based-vps/">VPS Region</a>
+            <a href="https://arzhost.com/lifetime-web-hosting/"
+              >Lifetime Web Hosting</a
+            >
+            <a href="https://www.arzhost.com/about-us/">About Us</a>
+            <a href="https://www.arzhost.com/contact-us/">Contact</a>
+          </nav>
+          <button class="mobile-menu">☰</button>
+        </div>
+      </div>
+    </header>
 
-    <script type="module" src="/client/App.tsx"></script>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Chinese Domain Hosting</h1>
+        <p class="subtitle">Host Local. Load Fast. Stay Compliant.</p>
+        <p class="description">
+          Reach your Chinese audience with domain hosting that delivers speed,
+          reliability, and full legal compliance. Ideal for businesses with or
+          targeting .cn domains—our service ensures your site is fast, secure,
+          and properly registered in China.
+        </p>
+        <div class="features-badges">
+          <span class="badge">✓ China-Optimized Hosting</span>
+          <span class="badge">✓ Full ICP License Support</span>
+          <span class="badge">✓ Fast Local Access</span>
+        </div>
+        <div class="cta-buttons">
+          <a href="https://arzhost.com/domain/" class="btn btn-primary"
+            >Choose a Plan</a
+          >
+          <a href="#" class="btn btn-outline">Speak with a Hosting Advisor</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Is Chinese Domain Hosting -->
+    <section class="section">
+      <div class="container">
+        <h2>What Is Chinese Domain Hosting?</h2>
+        <p>
+          Chinese domain hosting means hosting your .cn domain on servers
+          located inside Mainland China. This setup ensures faster loading
+          speeds for local users and complies with all relevant Chinese
+          regulations.
+        </p>
+        <br />
+        <p>
+          In short: you get a legally sound, high-performing site built for the
+          Chinese market.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Choose Our Chinese Domain Hosting -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Why Choose Our Chinese Domain Hosting?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Lightning-Fast Local Loading</h3>
+            <p>
+              By placing your domain inside China, visitor experience improves
+              thanks to reduced latency and faster page loads. No lag from
+              international routing means site visitors stay engaged and
+              conversions rise.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Higher Search Engine Visibility</h3>
+            <p>
+              Hosting within China boosts your rankings on Baidu and other local
+              search platforms. Gain an advantage with improved indexing and
+              stronger visibility in front of your target audience.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✓</div>
+            <h3>Full Regulatory Compliance</h3>
+            <p>
+              We support you through ICP and domain registration rules, reducing
+              legal risk from day one. Stay focused on growth—let us handle the
+              approval processes and documentation.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">❤️</div>
+            <h3>Boosted Trust, Lower Bounce Rates</h3>
+            <p>
+              Local hosting builds confidence among Chinese users and keeps them
+              on your site longer. A fast-loading, compliant website increases
+              credibility and sales potential.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expert ICP Licensing Support -->
+    <section class="section">
+      <div class="container">
+        <h2>Expert ICP Licensing Support</h2>
+        <p>
+          Don't know if you need a license? We'll handle the details and guide
+          you step by step.
+        </p>
+        <br />
+        <p>
+          Choose one of our pre-approved hosted domains if you want to skip the
+          process entirely.
+        </p>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+      <div class="container">
+        <div class="video-container">
+          <h2>Complete Guide to Chinese Domain Hosting</h2>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/YlBHWBiMS64"
+              title="Chinese Domain Hosting and ICP License Guide"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Powerful Hosting Features -->
+    <section class="section">
+      <div class="container">
+        <h2>Powerful Hosting Features</h2>
+        <div class="hosting-features">
+          <div class="hosting-card">
+            <h3>Mainland China Server Hosting</h3>
+            <p>
+              All domains are hosted locally for optimal connection speeds and
+              compliance.
+            </p>
+          </div>
+          <div class="hosting-card">
+            <h3>SSL Certificates Included</h3>
+            <p>
+              Secure your site and visitors' data with encrypted connections as
+              standard.
+            </p>
+          </div>
+          <div class="hosting-card">
+            <h3>Free ICP Consultation & Support</h3>
+            <p>
+              We help you determine licensing needs and assist with all
+              paperwork.
+            </p>
+          </div>
+          <div class="hosting-card">
+            <h3>Optional Email Hosting Integration</h3>
+            <p>
+              Want branded emails like you@yourdomain.cn? Add fast, compliant
+              email services to your plan.
+            </p>
+          </div>
+          <div class="hosting-card">
+            <h3>Daily Backups & Live Monitoring</h3>
+            <p>
+              Protect your data with automatic backups and constant server
+              monitoring.
+            </p>
+          </div>
+          <div class="hosting-card">
+            <h3>Around-the-Clock Bilingual Support</h3>
+            <p>
+              Our team is ready in both English and Chinese to help with any
+              technical or procedural questions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who Should Use Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Who Should Use Chinese Domain Hosting?</h2>
+        <div class="audience-grid">
+          <div class="audience-item">
+            <h3>Established Chinese Firms (.cn owners)</h3>
+            <p>
+              Maintain fast, legal, and stable hosting that's optimized for
+              local audiences.
+            </p>
+          </div>
+          <div class="audience-item">
+            <h3>International Companies Targeting China</h3>
+            <p>
+              Host your Chinese site locally to improve speed, governance, and
+              customer trust.
+            </p>
+          </div>
+          <div class="audience-item">
+            <h3>E-commerce & Online Publishers</h3>
+            <p>
+              Speed and reliability are essential—don't let slow loading affect
+              your sales or readership.
+            </p>
+          </div>
+          <div class="audience-item">
+            <h3>Educational Institutions & NGOs</h3>
+            <p>
+              Ensure secure handling of user data and compliance with domestic
+              regulations.
+            </p>
+          </div>
+          <div class="audience-item">
+            <h3>Anyone Facing Slow Offshore Hosting</h3>
+            <p>
+              If current international hosting performs poorly in China, our
+              service is your solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hosting Plans -->
+    <section class="section">
+      <div class="container">
+        <h2>Hosting Plans to Suit Every Need</h2>
+        <p>
+          Choose the plan that fits your budget and goals. All our plans are
+          competitively priced and designed for the Chinese market.
+        </p>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Basic Plan</h3>
+            <p>
+              Ideal for small sites, personal blogs, and entry-level businesses.
+              Includes local hosting, SSL, ICP help, daily backups, and
+              bilingual support.
+            </p>
+            <a href="https://arzhost.com/domain/" class="btn"
+              >Choose Basic Plan</a
+            >
+          </div>
+          <div class="pricing-card featured">
+            <div class="popular-badge">Most Popular</div>
+            <h3>Business Plan</h3>
+            <p>
+              A step up for growing ventures. Adds more storage,
+              professional-grade email, advanced DNS tools, and priority
+              technical support.
+            </p>
+            <a href="https://arzhost.com/domain/" class="btn"
+              >Choose Business Plan</a
+            >
+          </div>
+          <div class="pricing-card">
+            <h3>Enterprise Plan</h3>
+            <p>
+              For large businesses or high-traffic platforms. Offers dedicated
+              servers, guaranteed uptime SLA, CDN options, and a personal
+              account manager.
+            </p>
+            <a href="https://arzhost.com/domain/" class="btn"
+              >Choose Enterprise Plan</a
+            >
+          </div>
+        </div>
+
+        <div class="included-features">
+          <h3>Every Plan Includes:</h3>
+          <div class="features-list">
+            <div class="feature-item">
+              <span class="checkmark">✓</span>
+              <span>China-Optimized Hosting</span>
+            </div>
+            <div class="feature-item">
+              <span class="checkmark">✓</span>
+              <span>GDPR + PIPL Compliance</span>
+            </div>
+            <div class="feature-item">
+              <span class="checkmark">✓</span>
+              <span>SSL for Secure Browsing</span>
+            </div>
+            <div class="feature-item">
+              <span class="checkmark">✓</span>
+              <span>Daily Backups & Monitoring</span>
+            </div>
+            <div class="feature-item">
+              <span class="checkmark">✓</span>
+              <span>Full ICP Licensing Support</span>
+            </div>
+            <div class="feature-item">
+              <span class="checkmark">✓</span>
+              <span>Bilingual Technical Assistance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Host in China?</h2>
+        <p>Make your .cn domain fast, legal, and trusted in Mainland China.</p>
+        <div class="cta-buttons">
+          <a href="https://arzhost.com/domain/" class="btn btn-primary"
+            >Choose a Plan</a
+          >
+          <a href="#" class="btn btn-outline">Speak with a Hosting Advisor</a>
+        </div>
+        <div class="cta-footer">
+          <p>
+            Looking for
+            <a href="https://arzhost.com/">VPS hosting Hong Kong</a>? Visit our
+            main site at <a href="https://arzhost.com/">ARZ Host</a> for more
+            options.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ARZ Host</h3>
+            <p>
+              Professional hosting services with a focus on performance,
+              security, and compliance.
+            </p>
+            <p>
+              "We believe in providing hosting solutions that help businesses
+              succeed in the global marketplace."
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://arzhost.com/hosting/china-based-vps-server-hosting/"
+                  >Chinese Domain Hosting</a
+                >
+              </li>
+              <li>
+                <a href="https://arzhost.com/region-based-vps/">VPS Region</a>
+              </li>
+              <li>
+                <a href="https://arzhost.com/lifetime-web-hosting/"
+                  >Lifetime Web Hosting</a
+                >
+              </li>
+              <li><a href="https://arzhost.com/">Our Hosting Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="https://www.arzhost.com/about-us/">About Us</a></li>
+              <li>
+                <a href="https://www.arzhost.com/contact-us/">Contact Us</a>
+              </li>
+              <li>
+                <a href="https://www.arzhost.com/terms-conditions/"
+                  >Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <a href="https://www.arzhost.com/privacy-policy/"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.arzhost.com/disclaimer/">Disclaimer</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>Website: <a href="https://arzhost.com/">arzhost.com</a></li>
+              <li>Phone: +1 (631) 594-8060</li>
+              <li>Email: info@arzhost.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 ARZ Host. All rights reserved. Professional Chinese
+            domain hosting services.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
