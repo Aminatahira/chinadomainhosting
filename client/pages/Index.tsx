@@ -613,7 +613,7 @@ export default function Index() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="https://arzhost.com/domain/"
+                    href="https://arzhost.com/hosting/china-based-vps-server-hosting/"
                     className="text-gray-300 hover:text-white"
                   >
                     Chinese Domain Hosting
@@ -621,7 +621,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="https://arzhost.com/domain/"
+                    href="https://arzhost.com/region-based-vps/"
                     className="text-gray-300 hover:text-white"
                   >
                     VPS Region
@@ -629,7 +629,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="https://arzhost.com/domain/"
+                    href="https://arzhost.com/lifetime-web-hosting/"
                     className="text-gray-300 hover:text-white"
                   >
                     Lifetime Web Hosting
@@ -637,7 +637,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="https://arzhost.com/domain/"
+                    href="https://arzhost.com/"
                     className="text-gray-300 hover:text-white"
                   >
                     Our Hosting Services
