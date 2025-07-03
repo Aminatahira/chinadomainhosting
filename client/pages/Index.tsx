@@ -650,7 +650,7 @@ export default function Index() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="https://arzhost.com/domain/"
+                    href="https://www.arzhost.com/about-us/"
                     className="text-gray-300 hover:text-white"
                   >
                     About Us
@@ -658,7 +658,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="https://arzhost.com/domain/"
+                    href="https://www.arzhost.com/contact-us/"
                     className="text-gray-300 hover:text-white"
                   >
                     Contact Us
@@ -666,7 +666,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="https://arzhost.com/domain/"
+                    href="https://www.arzhost.com/terms-conditions/"
                     className="text-gray-300 hover:text-white"
                   >
                     Terms and Conditions
@@ -674,7 +674,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="https://arzhost.com/domain/"
+                    href="https://www.arzhost.com/privacy-policy/"
                     className="text-gray-300 hover:text-white"
                   >
                     Privacy Policy
@@ -682,7 +682,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="https://arzhost.com/domain/"
+                    href="https://www.arzhost.com/disclaimer/"
                     className="text-gray-300 hover:text-white"
                   >
                     Disclaimer
