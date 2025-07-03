@@ -695,10 +695,7 @@ export default function Index() {
               <ul className="space-y-2 text-gray-300">
                 <li>
                   Website:{" "}
-                  <a
-                    href="https://arzhost.com/domain/"
-                    className="hover:text-white"
-                  >
+                  <a href="https://arzhost.com/" className="hover:text-white">
                     arzhost.com
                   </a>
                 </li>
