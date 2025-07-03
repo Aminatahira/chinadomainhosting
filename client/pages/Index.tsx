@@ -575,14 +575,14 @@ export default function Index() {
             <p className="text-lg">
               Looking for{" "}
               <a
-                href="https://arzhost.com/domain/"
+                href="https://arzhost.com/"
                 className="underline hover:text-secondary"
               >
                 VPS hosting Hong Kong
               </a>
               ? Visit our main site at{" "}
               <a
-                href="https://arzhost.com/domain/"
+                href="https://arzhost.com/"
                 className="underline hover:text-secondary"
               >
                 ARZ Host
