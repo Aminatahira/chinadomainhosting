@@ -12,31 +12,31 @@ export default function Index() {
             </div>
             <nav className="hidden md:flex space-x-8">
               <a
-                href="https://arzhost.com/hosting/china-based-vps-server-hosting/"
+                href="https://arzhost.com/domain/"
                 className="text-text hover:text-primary font-medium"
               >
                 Chinese Domain Hosting
               </a>
               <a
-                href="https://arzhost.com/region-based-vps/"
+                href="https://arzhost.com/domain/"
                 className="text-text hover:text-primary font-medium"
               >
                 VPS Region
               </a>
               <a
-                href="https://arzhost.com/lifetime-web-hosting/"
+                href="https://arzhost.com/domain/"
                 className="text-text hover:text-primary font-medium"
               >
                 Lifetime Web Hosting
               </a>
               <a
-                href="https://www.arzhost.com/about-us/"
+                href="https://arzhost.com/domain/"
                 className="text-text hover:text-primary font-medium"
               >
                 About Us
               </a>
               <a
-                href="https://www.arzhost.com/contact-us/"
+                href="https://arzhost.com/domain/"
                 className="text-text hover:text-primary font-medium"
               >
                 Contact
